@@ -24,11 +24,11 @@ const mailLimiter = rateLimit({
 
 // POST : http://localhost:4001/notification
 // {
-//   "firstName": "John",
-//   "lastName": "Doe",
-//   "email": "john@example.com",
-//   "phone": "1234567890",
-//   "message": "Hello from the contact form!"
+  // "firstName": "John",
+  // "lastName": "Doe",
+  // "email": "john@example.com",
+  // "phone": "1234567890",
+  // "message": "Hello from the contact form!"
 // }
 router.post("/", mailLimiter, async (req, res) => {
   try {
