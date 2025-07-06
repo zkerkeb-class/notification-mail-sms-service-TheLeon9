@@ -30,7 +30,7 @@ The service exposes **a single notification route** that returns a **success** o
 Create a `.env` file at the root of the project with the following content :
 
 ```
-PORT=4001
+PORT=port
 SMTP_SERVICE=gmail
 SMTP_USER=yourmail
 SMTP_PASS=yourpassword
@@ -52,7 +52,7 @@ NOTIFY_TO=yourmail
 
 ### POST /notification
 
-- **URL :** `http://localhost:4001/notification`.
+- **URL :** `http://localhost:port/notification`.
 - **BODY (JSON) :**
 
 ```
@@ -81,7 +81,7 @@ NOTIFY_TO=yourmail
 
 ## 🔒 Security
 
-Make sure to **never** commit your `.env` file to a public repository._
+Make sure to **never** commit your `.env` file to a public repository.
 
 ---
 
